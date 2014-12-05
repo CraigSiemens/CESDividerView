@@ -7,23 +7,62 @@
 //
 
 #import "CESViewController.h"
+#import "CESDividerView.h"
+
 
 @interface CESViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *programaticView;
+
 @end
+
 
 @implementation CESViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self setupVerticalDividerView];
+    [self setupHorizontalDividerView];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)setupVerticalDividerView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    CESDividerView *verticalDividerView = [[CESDividerView alloc] initWithType:CESDividerViewTypeVertical];
+    verticalDividerView.translatesAutoresizingMaskIntoConstraints = NO;
+    verticalDividerView.backgroundColor = [UIColor blueColor];
+    
+    [self.programaticView addSubview:verticalDividerView];
+    
+    [self.programaticView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[verticalDividerView]|"
+                                                                    options:0
+                                                                    metrics:nil
+                                                                      views:NSDictionaryOfVariableBindings(verticalDividerView)]];
+    
+    [self.programaticView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[verticalDividerView]-40-|"
+                                                                     options:0
+                                                                     metrics:nil
+                                                                       views:NSDictionaryOfVariableBindings(verticalDividerView)]];
+}
+
+- (void)setupHorizontalDividerView
+{
+    CESDividerView *horizontalDividerView = [[CESDividerView alloc] initWithType:CESDividerViewTypeHorizonal];
+    horizontalDividerView.translatesAutoresizingMaskIntoConstraints = NO;
+    horizontalDividerView.backgroundColor = [UIColor magentaColor];
+    
+    [self.programaticView addSubview:horizontalDividerView];
+    
+    [self.programaticView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[horizontalDividerView]"
+                                                                      options:0
+                                                                      metrics:nil
+                                                                        views:NSDictionaryOfVariableBindings(horizontalDividerView)]];
+    
+    [self.programaticView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[horizontalDividerView]|"
+                                                                      options:0
+                                                                      metrics:nil
+                                                                        views:NSDictionaryOfVariableBindings(horizontalDividerView)]];
 }
 
 @end

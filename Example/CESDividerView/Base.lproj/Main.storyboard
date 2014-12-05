@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CESViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNE-L4-PoZ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="274"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StoryBoard/Xib" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvK-SD-PDM">
+                                        <rect key="frame" x="101" y="127" width="117.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H44-E2-fxZ" customClass="CESDividerView">
+                                        <rect key="frame" x="40" y="0.0" width="1" height="274"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="vertical" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-m2-LcC" customClass="CESDividerView">
+                                        <rect key="frame" x="0.0" y="233" width="320" height="1"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GpN-hy-APW">
+                                        <rect key="frame" x="187" y="261" width="160" height="137"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uBf-m2-LcC" secondAttribute="trailing" id="2Zy-IN-2cI"/>
+                                    <constraint firstAttribute="bottom" secondItem="uBf-m2-LcC" secondAttribute="bottom" constant="40" id="3Bf-2t-oqM"/>
+                                    <constraint firstItem="H44-E2-fxZ" firstAttribute="top" secondItem="JNE-L4-PoZ" secondAttribute="top" id="HdC-3h-4Bs"/>
+                                    <constraint firstAttribute="bottom" secondItem="H44-E2-fxZ" secondAttribute="bottom" id="IFH-9J-EKG"/>
+                                    <constraint firstItem="uBf-m2-LcC" firstAttribute="leading" secondItem="JNE-L4-PoZ" secondAttribute="leading" id="bq5-zn-ICN"/>
+                                    <constraint firstItem="H44-E2-fxZ" firstAttribute="leading" secondItem="JNE-L4-PoZ" secondAttribute="leading" constant="40" id="r44-OW-DJr"/>
+                                    <constraint firstAttribute="centerX" secondItem="mvK-SD-PDM" secondAttribute="centerX" id="rXN-Be-4gm"/>
+                                    <constraint firstAttribute="centerY" secondItem="mvK-SD-PDM" secondAttribute="centerY" id="zuQ-E3-KDR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzH-E7-3GW">
+                                <rect key="frame" x="0.0" y="294" width="320" height="274"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programmatic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3d-FH-vqd">
+                                        <rect key="frame" x="106" y="127" width="108" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="S3d-FH-vqd" secondAttribute="centerY" id="L0g-Ky-l5G"/>
+                                    <constraint firstAttribute="centerX" secondItem="S3d-FH-vqd" secondAttribute="centerX" id="Vr3-Ic-cSe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JNE-L4-PoZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="0Ve-Su-Hf4"/>
+                            <constraint firstItem="TzH-E7-3GW" firstAttribute="height" secondItem="JNE-L4-PoZ" secondAttribute="height" id="K65-9R-BpS"/>
+                            <constraint firstAttribute="trailing" secondItem="JNE-L4-PoZ" secondAttribute="trailing" id="Qfx-dN-oHF"/>
+                            <constraint firstItem="TzH-E7-3GW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="WtM-SZ-Am4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TzH-E7-3GW" secondAttribute="bottom" id="Ysb-At-vYM"/>
+                            <constraint firstItem="TzH-E7-3GW" firstAttribute="top" secondItem="JNE-L4-PoZ" secondAttribute="bottom" id="ezf-aL-6IL"/>
+                            <constraint firstAttribute="trailing" secondItem="TzH-E7-3GW" secondAttribute="trailing" id="tjk-Ph-Frw"/>
+                            <constraint firstItem="JNE-L4-PoZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="x3n-qf-XVP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="programaticView" destination="TzH-E7-3GW" id="7zP-Dh-V4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
