@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'CESDividerView', :exclusive => true do
+  pod "CESDividerView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "CESDividerView", :path => "../"
+
+  
+end
