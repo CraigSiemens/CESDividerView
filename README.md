@@ -16,15 +16,6 @@ To run the example project, run `pod try CESDividerView`.
 
 ## Usage
 
-### Storyboard/Xib
-1. Add a UIView
-2. In the Identity Inspector (⌥⌘3), set the class to `CESDividerView`
-
-	![class](Images/class.png)
-3. To make a vertical line, in the Attributes Inspector (⌥⌘4), set "Vertical" to On
-
-	![verical](Images/vertical.png)
-
 ### Programmatically
 
 Create a new instance and set the type to `CESDividerViewTypeHorizontal` or `CESDividerViewTypeVertical`. This can be done using `-initWithType:`
@@ -36,6 +27,21 @@ CESDividerView *dividerView = [[CESDividerView alloc] initWithType:CESDividerVie
 ```objc
 dividerView.type = CESDividerViewTypeHorizontal;
 ```
+
+### Storyboard/Xib
+1. Add a UIView.
+
+2. In the Identity Inspector (⌥⌘3), set the class to `CESDividerView`.
+
+	![class](Images/class.png)
+	
+3. To make layout easier, in the Size Inspector (⌥⌘5), set the intrinsic size to match the type of divider you want to create.
+
+	![intrinsic](Images/intrinsic.png)
+
+4. To make a vertical line, in the Identity Inspector (⌥⌘3), add a boolean runtime attribute called `vertical`.
+
+	![verical](Images/vertical.png)
 
 ## Installation
 

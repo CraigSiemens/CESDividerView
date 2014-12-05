@@ -11,7 +11,7 @@
 
 @interface CESDividerView ()
 
-@property (assign, nonatomic) IBInspectable BOOL vertical;
+@property (assign, nonatomic) BOOL vertical;
 
 @end
 

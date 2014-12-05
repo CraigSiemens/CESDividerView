@@ -15,7 +15,6 @@ typedef NS_ENUM(NSUInteger, CESDividerViewType) {
 };
 
 
-IB_DESIGNABLE
 @interface CESDividerView : UIView
 
 @property (assign, nonatomic) CESDividerViewType type;
