@@ -6,7 +6,7 @@
 
 Simplifies the creation of a one pixel line on any device.
 
-* Horizonal or vertical
+* Horizontal or vertical
 * Works with or without autolayout.
 * Can be created programmatically or in storyboards/xibs
 
