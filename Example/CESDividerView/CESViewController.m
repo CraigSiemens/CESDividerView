@@ -48,7 +48,7 @@
 
 - (void)setupHorizontalDividerView
 {
-    CESDividerView *horizontalDividerView = [[CESDividerView alloc] initWithType:CESDividerViewTypeHorizonal];
+    CESDividerView *horizontalDividerView = [[CESDividerView alloc] initWithType:CESDividerViewTypeHorizontal];
     horizontalDividerView.translatesAutoresizingMaskIntoConstraints = NO;
     horizontalDividerView.backgroundColor = [UIColor magentaColor];
     

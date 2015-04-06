@@ -37,7 +37,7 @@
 
 - (void)setVertical:(BOOL)vertical
 {
-    self.type = (vertical ? CESDividerViewTypeVertical : CESDividerViewTypeHorizonal);
+    self.type = (vertical ? CESDividerViewTypeVertical : CESDividerViewTypeHorizontal);
 }
 
 - (CGSize)intrinsicContentSize
@@ -46,7 +46,7 @@
     
     CGSize size = CGSizeMake(UIViewNoIntrinsicMetric, UIViewNoIntrinsicMetric);
     
-    if (self.type == CESDividerViewTypeHorizonal) {
+    if (self.type == CESDividerViewTypeHorizontal) {
         size = CGSizeMake(UIViewNoIntrinsicMetric, thickness);
     }
     else if (self.type == CESDividerViewTypeVertical) {

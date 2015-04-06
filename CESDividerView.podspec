@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CESDividerView"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Create a one pixel line on any device"
   s.description      = <<-DESC
                        Simplifies the creation of a one pixel line on any device.

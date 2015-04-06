@@ -10,7 +10,7 @@
 
 
 typedef NS_ENUM(NSUInteger, CESDividerViewType) {
-    CESDividerViewTypeHorizonal = 0,
+    CESDividerViewTypeHorizontal = 0,
     CESDividerViewTypeVertical = 1
 };
 
